@@ -1,47 +1,39 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Navbar from './components/Navbar.vue'
+import HeroSection from './components/HeroSection.vue'
+import AboutSection from './components/AboutSection.vue'
+import ServicesSection from './components/ServicesSection.vue'
+import FeaturesSection from './components/FeaturesSection.vue'
+import FooterSection from './components/FooterSection.vue'
+import ServiceCatalog from './components/ServiceCatalog.vue'
 </script>
 
+<!-- <template>
+  <div class="min-h-screen font-sans text-gray-800">
+    <Navbar />
+    <main>
+      <HeroSection />
+      <AboutSection />
+      <ServicesSection />
+      <FeaturesSection />
+    </main>
+    <FooterSection />
+  </div>
+</template> -->
+
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="min-h-screen font-sans text-gray-800">
+    <Navbar />
+    <main>
+      <HeroSection />
+      <AboutSection />
+      
+      <ServiceCatalog /> <FeaturesSection />
+    </main>
+    <FooterSection />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+<style>
+/* Pastikan main.css sudah diimport di main.js Anda */
 </style>
