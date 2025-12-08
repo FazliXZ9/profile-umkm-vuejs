@@ -64,7 +64,7 @@ const currentYear = new Date().getFullYear()
     </div>
     
     <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm relative">
-      <p>&copy;{{ currentYear }} <span class="text-enp-gold font-semibold">ENP GROUP</span> | Support by ammar and the gank & Sainzlab.my.id</p>
+      <p>&copy;{{ currentYear }} <span class="text-enp-gold font-semibold">ENP GROUP</span> | Support by Sainzlab.my.id & Kelompok KWU Ammar with the gank</p>
     </div>
   </footer>
 </template>
