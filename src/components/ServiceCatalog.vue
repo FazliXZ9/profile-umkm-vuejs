@@ -1,7 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-// 1. Data Mockup Layanan (Bisa ditambah sesuai kebutuhan)
 const services = [
   {
     id: 1,
@@ -53,7 +52,6 @@ const services = [
   },
 ]
 
-// 2. Logic Filter Kategori
 const activeCategory = ref('Semua')
 const categories = ['Semua', 'Steam', 'Sablon', 'Culinary', 'Konter']
 
@@ -64,10 +62,9 @@ const filteredServices = computed(() => {
   return services.filter(item => item.category === activeCategory.value)
 })
 
-// 3. Fungsi ke WhatsApp
 const contactWhatsapp = (productName) => {
   const message = `Halo Admin ENP Group, saya tertarik dengan layanan ${productName}, bisa minta info detail?`
-  const url = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`
+  const url = `https://wa.me/6282320305330?text=${encodeURIComponent(message)}`
   window.open(url, '_blank')
 }
 </script>

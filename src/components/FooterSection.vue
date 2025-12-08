@@ -34,7 +34,7 @@ const currentYear = new Date().getFullYear()
           
           <li class="flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-3 text-enp-gold flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-1.36 1.744a15.09 15.09 0 01-7.07-7.07l1.744-1.36c.361-.271.526-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
-            0812-3456-7890
+            0823-2030-5330
           </li>
           
           <li class="flex items-center">
@@ -64,7 +64,7 @@ const currentYear = new Date().getFullYear()
     </div>
     
     <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm relative">
-      <p>&copy; {{ currentYear }} <span class="text-enp-gold font-semibold">ENP GROUP</span> | SainzLab.my.id</p>
+      <p>&copy;{{ currentYear }} <span class="text-enp-gold font-semibold">ENP GROUP</span> | Support by ammar and the gank & Sainzlab.my.id</p>
     </div>
   </footer>
 </template>

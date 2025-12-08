@@ -35,5 +35,5 @@ import ServiceCatalog from './components/ServiceCatalog.vue'
 </template>
 
 <style>
-/* Pastikan main.css sudah diimport di main.js Anda */
+/* cuy */
 </style>

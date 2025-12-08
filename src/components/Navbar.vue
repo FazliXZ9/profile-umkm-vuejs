@@ -35,10 +35,24 @@ const toggleMenu = () => {
         </li>
       </ul>
 
-      <div class="hidden md:block">
-        <button class="bg-enp-gold hover:bg-enp-gold-hover text-enp-dark font-bold py-2 px-6 rounded transition transform hover:scale-105 duration-200">
+      <div class="hidden md:flex items-center space-x-4">
+        <a 
+          href="https://api.whatsapp.com/message/S6RAXQXIAZBXM1?autoload=1&app_absent=0"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-enp-gold hover:bg-enp-gold-hover text-enp-dark font-bold py-2 px-6 rounded transition transform hover:scale-105 duration-200 inline-block"
+        >
           HUBUNGI KAMI
-        </button>
+        </a>
+        <a 
+          href="/login" 
+          class="text-gray-400 hover:text-enp-gold transition duration-200 p-2 rounded-full hover:bg-gray-800"
+          title="Login Admin"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+          </svg>
+        </a>
       </div>
       
       <button 
@@ -76,10 +90,25 @@ const toggleMenu = () => {
               {{ item }}
             </a>
           </li>
+
+          <li class="animate-fadeIn" style="animation-delay: 400ms">
+             <a href="/login" class="block py-2 text-gray-400 hover:text-white text-sm flex items-center justify-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+                Login Admin
+             </a>
+          </li>
+
           <li class="pt-2 animate-fadeIn" style="animation-delay: 500ms">
-             <button class="w-full bg-enp-gold hover:bg-enp-gold-hover text-enp-dark font-bold py-3 px-6 rounded transition active:scale-95">
+             <a 
+                href="https://api.whatsapp.com/message/S6RAXQXIAZBXM1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block w-full text-center bg-enp-gold hover:bg-enp-gold-hover text-enp-dark font-bold py-3 px-6 rounded transition active:scale-95"
+             >
               HUBUNGI KAMI
-            </button>
+            </a>
           </li>
         </ul>
       </div>
@@ -88,7 +117,6 @@ const toggleMenu = () => {
 </template>
 
 <style scoped>
-/* Keyframes sederhana untuk item menu mobile muncul satu per satu */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
@@ -96,6 +124,6 @@ const toggleMenu = () => {
 
 .animate-fadeIn {
   animation: fadeIn 0.4s ease-out forwards;
-  opacity: 0; /* Mulai hidden sebelum animasi jalan */
+  opacity: 0;
 }
 </style>
