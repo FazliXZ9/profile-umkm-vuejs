@@ -45,7 +45,7 @@ const toggleMenu = () => {
           HUBUNGI KAMI
         </a>
         <a 
-          href="/login" 
+          href="http://127.0.0.1:8000/admin" 
           class="text-gray-400 hover:text-enp-gold transition duration-200 p-2 rounded-full hover:bg-gray-800"
           title="Login Admin"
         >
