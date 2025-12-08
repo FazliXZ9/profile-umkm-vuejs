@@ -14,9 +14,9 @@
         </button>
       </div>
 
-      <div class="flex justify-center md:justify-end z-10 relative mt-10 md:mt-0">
+      <div class="hidden md:flex justify-center md:justify-end z-10 relative mt-10 md:mt-0">
         <img 
-          src="@/assets/logo-upscll.png" 
+          src="@/assets/ENPv1.png" 
           alt="Logo ENP Group" 
           class="w-full max-w-md h-auto object-contain drop-shadow-xl"
         />
