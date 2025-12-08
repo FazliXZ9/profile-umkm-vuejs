@@ -5,7 +5,7 @@ import { ref, computed } from 'vue'
 const services = [
   {
     id: 1,
-    category: 'Tech',
+    category: 'Steam',
     title: 'Web Company Profile',
     description: 'Pembuatan website profesional untuk meningkatkan kredibilitas bisnis Anda. Responsive dan SEO friendly.',
     price: 'Mulai Rp 1.5jt',
@@ -13,7 +13,7 @@ const services = [
   },
   {
     id: 2,
-    category: 'Textile',
+    category: 'Sablon',
     title: 'Seragam Kerja Custom',
     description: 'Produksi seragam kantor, pabrik, atau komunitas dengan bahan drill/katun berkualitas tinggi.',
     price: 'Min. 12 Pcs',
@@ -29,7 +29,7 @@ const services = [
   },
   {
     id: 4,
-    category: 'Tech',
+    category: 'Steam',
     title: 'Aplikasi Kasir (POS)',
     description: 'Sistem kasir terintegrasi untuk memantau stok dan penjualan secara real-time.',
     price: 'Langganan Bulanan',
@@ -37,7 +37,7 @@ const services = [
   },
   {
     id: 5,
-    category: 'Textile',
+    category: 'Sablon',
     title: 'Kaos Sablon & Event',
     description: 'Sablon plastisol/DTF awet untuk kaos event, gathering, atau merchandise.',
     price: 'Harga Bersaing',
@@ -55,7 +55,7 @@ const services = [
 
 // 2. Logic Filter Kategori
 const activeCategory = ref('Semua')
-const categories = ['Semua', 'Tech', 'Textile', 'Culinary']
+const categories = ['Semua', 'Steam', 'Sablon', 'Culinary', 'Konter']
 
 const filteredServices = computed(() => {
   if (activeCategory.value === 'Semua') {
@@ -79,7 +79,7 @@ const contactWhatsapp = (productName) => {
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-enp-dark mb-4">Katalog Layanan</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
-          Temukan solusi terbaik yang sesuai dengan kebutuhan bisnis Anda. Kami menawarkan layanan terintegrasi dari hulu ke hilir.
+          Temukan solusi terpadu untuk kebutuhan harian Anda. Kami menawarkan beragam layanan mulai dari perawatan kendaraan, kebutuhan digital, kreasi fesyen, hingga camilan lezat.
         </p>
       </div>
 

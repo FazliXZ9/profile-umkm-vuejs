@@ -8,10 +8,10 @@
       <div class="space-y-6">
         <h2 class="text-3xl md:text-4xl font-bold text-enp-dark">About Us</h2>
         <p class="text-gray-600 leading-relaxed">
-          ENP Group adalah mitra terpercaya bagi UMKM di Indonesia, menyediakan solusi inovatif yang didukung oleh teknologi terkini. Kami berdedikasi untuk membantu bisnis lokal tumbuh dan bersaing di pasar global.
+          Kami hadir sebagai solusi terpadu untuk kebutuhan harian Anda. Dari perawatan kendaraan, kreasi fesyen personal, hingga konektivitas digital dan camilan lezat, kami berkomitmen menyediakan layanan UMKM yang beragam dan berkualitas.
         </p>
         <p class="text-gray-600 leading-relaxed">
-          Dengan komitmen kuat terhadap kualitas dan kolaborasi, kami menjembatani tantangan yang dihadapi pengusaha dengan peluang baru, memastikan setiap langkah bisnis Anda didukung oleh keahlian profesional.
+          Kami percaya bahwa bisnis lokal harus didukung dengan keahlian profesional dan layanan yang mudah diakses. Di bengkel kami, motor Anda mendapatkan perawatan terbaik. Di studio kami, ide sablon baju Anda menjadi kenyataan. Di konter kami, urusan SIM card Anda berjalan lancar. Dan di dapur kami, kami siapkan makanan ringan yang memanjakan lidah Anda. Kami adalah mitra yang siap mendukung setiap aspek kebutuhan Anda.
         </p>
       </div>
     </div>

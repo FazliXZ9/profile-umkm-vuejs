@@ -2,12 +2,12 @@
   <section class="bg-enp-dark text-white pt-32 pb-20 px-6 md:px-12 relative overflow-hidden">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       <div class="space-y-6 z-10">
-        <p class="text-lg text-gray-300">Indonesia Diri Indonesian UMKM</p>
+        <p class="text-lg text-gray-300">UMKM Indonesian</p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-          SOLUSI TERPERCAYA <br class="hidden md:block"> UNTUK BISNIS ANDA.
+          SOLUSI TERPERCAYA <br class="hidden md:block"> KEBUTUHAN ANDA
         </h1>
         <p class="text-xl text-gray-300 max-w-lg">
-          Kualitas, Dedikasi, dan Inovasi dari UMKM Indonesia.
+          Kualitas dan Dedikasi dari UMKM Indonesia
         </p>
         <button class="bg-enp-gold hover:bg-enp-gold-hover text-enp-dark font-bold py-3 px-8 rounded mt-4 inline-block transition">
           LIHAT LAYANAN

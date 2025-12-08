@@ -7,21 +7,21 @@
         <ul class="space-y-4">
           <li class="flex items-start">
              <span class="h-2 w-2 mt-2 mr-3 bg-enp-gold rounded-full"></span>
-            <p class="text-gray-700">Pendekatan komprehensif yang disesuaikan dengan kebutuhan unik setiap UMKM.</p>
+            <p class="text-gray-700">Anda bisa mendapatkan perawatan motor, sablon baju, kebutuhan digital, dan camilan lezat tanpa perlu mencari ke banyak tempat.</p>
           </li>
            <li class="flex items-start">
             <span class="h-2 w-2 mt-2 mr-3 bg-enp-gold rounded-full"></span>
-            <p class="text-gray-700">Didukung oleh tim profesional berpengalaman di berbagai sektor industri.</p>
+            <p class="text-gray-700">Kami memberikan perhatian khusus pada setiap layanan, mulai dari kebersihan motor, akurasi sablon, hingga rasa makanan ringan dan kecepatan layanan SIM.</p>
           </li>
         </ul>
         <ul class="space-y-4">
            <li class="flex items-start">
             <span class="h-2 w-2 mt-2 mr-3 bg-enp-gold rounded-full"></span>
-            <p class="text-gray-700">Jaringan kemitraan yang luas untuk akselerasi pertumbuhan bisnis.</p>
+            <p class="text-gray-700">Didukung oleh tenaga ahli di setiap bidang (mekanik, desainer sablon, dan staf konter) untuk menjamin hasil terbaik.</p>
           </li>
            <li class="flex items-start">
             <span class="h-2 w-2 mt-2 mr-3 bg-enp-gold rounded-full"></span>
-            <p class="text-gray-700">Fokus pada inovasi berkelanjutan dan penerapan teknologi tepat guna.</p>
+            <p class="text-gray-700">Kami siap menyesuaikan layanan kami, baik untuk desain sablon khusus maupun pemesanan makanan ringan dalam jumlah besar.</p>
           </li>
         </ul>
       </div>
