@@ -9,7 +9,7 @@ const activeCategory = ref('Semua')
 
 const fetchData = async () => {
   try {
-    const response = await axios.get('http://localhost:8000/api/landing-data')
+    const response = await axios.get('https://enpadmin.sainzlab.my.id/api/landing-data')
     
     if (response.data.status === 'success') {
       services.value = response.data.data.services

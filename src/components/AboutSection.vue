@@ -11,13 +11,12 @@ const defaultImage = 'https://placehold.co/600x400/e2e8f0/1e293b?text=Foto+UMKM'
 
 const fetchData = async () => {
   try {
-    const response = await axios.get('http://127.0.0.1:8000/api/landing-data')
+    const response = await axios.get('https://enpadmin.sainzlab.my.id/api/landing-data')
     
     if (response.data.status === 'success') {
       const profile = response.data.data.profile
       const baseUrl = response.data.data.image_base_url
 
-      // Jika ada data profil dari database, pakai data itu
       if (profile) {
         description.value = profile.about_description || defaultDesc
         
@@ -27,14 +26,13 @@ const fetchData = async () => {
           imageUrl.value = defaultImage
         }
       } else {
-        // Jika tabel kosong, pakai default
         description.value = defaultDesc
         imageUrl.value = defaultImage
       }
     }
   } catch (error) {
     console.error("Gagal mengambil data profil:", error)
-    // Jika error, tetap tampilkan default agar tidak rusak
+
     description.value = defaultDesc
     imageUrl.value = defaultImage
   } finally {
