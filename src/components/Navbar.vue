@@ -28,7 +28,7 @@ const setActive = (itemName) => {
       <div class="flex items-center space-x-3 cursor-pointer hover:opacity-80 transition">
         <a href="#">
             <img 
-              src="@/assets/logo-Update2.png" 
+              src="@/assets/Logo-Update2.png" 
               alt="Logo ENP Group" 
               class="h-10 w-auto object-contain" 
             />
@@ -53,7 +53,7 @@ const setActive = (itemName) => {
 
       <div class="hidden md:flex items-center space-x-4">
         <a 
-          href="http://127.0.0.1:8000/admin" 
+          href="https://enpadmin.sainzlab.my.id/admin" 
           target="_blank"
           class="text-gray-400 hover:text-enp-gold transition duration-200 p-2 rounded-full hover:bg-gray-800"
           title="Login Admin"
