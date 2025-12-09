@@ -68,7 +68,7 @@ onMounted(() => {
       </div>
 
       <div class="space-y-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-enp-dark">About Us</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-enp-dark">Tentang Kami</h2>
         
         <div v-if="isLoading" class="space-y-3 animate-pulse">
           <div class="h-4 bg-gray-200 rounded w-full"></div>

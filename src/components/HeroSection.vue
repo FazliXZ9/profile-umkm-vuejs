@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-enp-dark text-white pt-32 pb-20 px-6 md:px-12 relative overflow-hidden">
+  <section id="home" class="bg-enp-dark text-white pt-32 pb-20 px-6 md:px-12 relative overflow-hidden">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       <div class="space-y-6 z-10">
         <!-- <p class="text-lg text-gray-300"></p> -->

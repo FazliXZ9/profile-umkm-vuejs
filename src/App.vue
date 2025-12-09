@@ -35,5 +35,10 @@ import ServiceCatalog from './components/ServiceCatalog.vue'
 </template>
 
 <style>
-/* cuy */
+
+  html {
+    scroll-behavior: smooth; 
+    scroll-padding-top: 80px; 
+  }
+
 </style>

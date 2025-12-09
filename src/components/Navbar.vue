@@ -1,13 +1,23 @@
 <script setup>
 import { ref } from 'vue'
 
-const navItems = ['Beranda', 'Tentang Kami', 'Layanan', 'Keunggulan']
-const activeItem = 'Beranda'
+const navItems = [
+  { name: 'Beranda', href: '#home' },       
+  { name: 'Tentang Kami', href: '#tentang-kami' },
+  { name: 'Layanan', href: '#layanan-lengkap' },
+  { name: 'Keunggulan', href: '#keunggulan' } 
+]
 
+const activeItem = ref('Beranda')
 const isMenuOpen = ref(false)
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
+}
+
+const setActive = (itemName) => {
+  activeItem.value = itemName
+  isMenuOpen.value = false
 }
 </script>
 
@@ -16,26 +26,43 @@ const toggleMenu = () => {
     <div class="flex items-center justify-between">
       
       <div class="flex items-center space-x-3 cursor-pointer hover:opacity-80 transition">
-        <img 
-          src="@/assets/logo-Update2.png" 
-          alt="Logo ENP Group" 
-          class="h-10 w-auto object-contain" 
-        />
+        <a href="#">
+            <img 
+              src="@/assets/logo-Update2.png" 
+              alt="Logo ENP Group" 
+              class="h-10 w-auto object-contain" 
+            />
+        </a>
       </div>
 
       <ul class="hidden md:flex space-x-8 font-medium">
-        <li v-for="item in navItems" :key="item" class="relative group cursor-pointer">
-          <a href="#" :class="item === activeItem ? 'text-enp-gold' : 'hover:text-enp-gold transition duration-300'">
-            {{ item }}
+        <li v-for="item in navItems" :key="item.name" class="relative group cursor-pointer">
+          <a 
+            :href="item.href" 
+            @click="setActive(item.name)"
+            :class="item.name === activeItem ? 'text-enp-gold' : 'hover:text-enp-gold transition duration-300'"
+          >
+            {{ item.name }}
           </a>
           <span 
             class="absolute -bottom-1 left-0 h-1 bg-enp-gold rounded-full transition-all duration-300 ease-in-out"
-            :class="item === activeItem ? 'w-8' : 'w-0 group-hover:w-full'"
+            :class="item.name === activeItem ? 'w-8' : 'w-0 group-hover:w-full'"
           ></span>
         </li>
       </ul>
 
       <div class="hidden md:flex items-center space-x-4">
+        <a 
+          href="http://127.0.0.1:8000/admin" 
+          target="_blank"
+          class="text-gray-400 hover:text-enp-gold transition duration-200 p-2 rounded-full hover:bg-gray-800"
+          title="Login Admin"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+          </svg>
+        </a>
+
         <a 
           href="https://api.whatsapp.com/message/S6RAXQXIAZBXM1?autoload=1&app_absent=0"
           target="_blank"
@@ -43,15 +70,6 @@ const toggleMenu = () => {
           class="bg-enp-gold hover:bg-enp-gold-hover text-enp-dark font-bold py-2 px-6 rounded transition transform hover:scale-105 duration-200 inline-block"
         >
           HUBUNGI KAMI
-        </a>
-        <a 
-          href="http://127.0.0.1:8000/admin" 
-          class="text-gray-400 hover:text-enp-gold transition duration-200 p-2 rounded-full hover:bg-gray-800"
-          title="Login Admin"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-          </svg>
         </a>
       </div>
       
@@ -80,19 +98,20 @@ const toggleMenu = () => {
     >
       <div v-if="isMenuOpen" class="md:hidden absolute top-full left-0 w-full bg-enp-dark border-t border-gray-700 shadow-xl flex flex-col overflow-hidden">
         <ul class="flex flex-col p-4 space-y-4 font-medium text-center">
-          <li v-for="(item, index) in navItems" :key="item" class="animate-fadeIn" :style="{ animationDelay: `${index * 100}ms` }">
+          
+          <li v-for="(item, index) in navItems" :key="item.name" class="animate-fadeIn" :style="{ animationDelay: `${index * 100}ms` }">
             <a 
-              href="#" 
+              :href="item.href" 
               class="block py-2 hover:text-enp-gold transition duration-200 hover:translate-x-1"
-              :class="item === activeItem ? 'text-enp-gold font-bold' : ''"
-              @click="isMenuOpen = false" 
+              :class="item.name === activeItem ? 'text-enp-gold font-bold' : ''"
+              @click="setActive(item.name)" 
             >
-              {{ item }}
+              {{ item.name }}
             </a>
           </li>
 
           <li class="animate-fadeIn" style="animation-delay: 400ms">
-             <a href="/login" class="block py-2 text-gray-400 hover:text-white text-sm flex items-center justify-center gap-2">
+             <a href="http://127.0.0.1:8000/admin" class="block py-2 text-gray-400 hover:text-white text-sm flex items-center justify-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
                 </svg>
