@@ -2,12 +2,10 @@
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
 
-// State untuk menampung data
 const description = ref('')
 const imageUrl = ref('')
 const isLoading = ref(true)
 
-// Data Default (Fallback jika database kosong)
 const defaultDesc = `Kami hadir sebagai solusi terpadu untuk kebutuhan harian Anda. Dari perawatan kendaraan, kreasi fesyen personal, hingga konektivitas digital dan camilan lezat, kami berkomitmen menyediakan layanan UMKM yang beragam dan berkualitas.\n\nKami percaya bahwa bisnis lokal harus didukung dengan keahlian profesional dan layanan yang mudah diakses. Kami adalah mitra yang siap mendukung setiap aspek kebutuhan Anda.`
 const defaultImage = 'https://placehold.co/600x400/e2e8f0/1e293b?text=Foto+UMKM'
 
